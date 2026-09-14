@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Models\produitM;
+
+class produitC extends Controller
+{
+    //
+    public function index()
+    {
+        return view ('indexV');
+    }
+
+    public function all()
+    {
+    $enregAll = produitM::all();
+                
+    $enregCount = produitM::all()->count();
+
+    return view('produitallV',['enregAll'=>$enregAll,'enregCount'=>$enregCount]);
+    }
+
+}
