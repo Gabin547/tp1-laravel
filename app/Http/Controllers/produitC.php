@@ -38,7 +38,7 @@ class produitC extends Controller
 
         $data->save();
 
-        return redirect->route('consulter');
+        return redirect()->route('consulter');
     }
 
 }
