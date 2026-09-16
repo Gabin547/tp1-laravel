@@ -22,4 +22,10 @@ class produitC extends Controller
     return view('produitallV',['enregAll'=>$enregAll,'enregCount'=>$enregCount]);
     }
 
+    public function newp()
+    {
+        return view ('formenewproduitV');
+        // Appel vue contenant un formulaire de création de produit
+    }
+
 }
